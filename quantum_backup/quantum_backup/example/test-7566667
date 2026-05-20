@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/group161/g161-user4/example/vqe_h2.py", line 1, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[22252,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

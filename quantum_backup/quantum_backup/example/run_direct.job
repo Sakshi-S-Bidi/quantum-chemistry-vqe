@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH -p Batch
+#SBATCH -o output-%j.txt
+#SBATCH -N 1
+#SBATCH -t 01:00:00
+
+echo "Starting Job"
+
+# 🔴 Disable MPI completely
+export OMPI_MCA_plm=isolated
+export OMPI_MCA_btl=self
+
+# Activate environment
+source ~/example/qenv/bin/activate
+
+# Run WITHOUT MPI
+python ~/example/vqe_lih.py
+
+echo "Job Finished"

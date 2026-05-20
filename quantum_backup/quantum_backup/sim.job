@@ -1,0 +1,7 @@
+#!/bin/bash
+#SBATCH -p Batch
+#SBATCH -o test-%j
+#SBATCH -N 1
+#SBATCH -t 01:00:00
+
+mpirun -npernode 1 ./job.sh ~/example/qenv python test.py
